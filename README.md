@@ -12,7 +12,7 @@ Check **LambertW** and **bestNormalize** for more aggresive data transforms appr
 
 ## Installation
 
-```devtools::install_github('https://github.com/jottino/outlyr')```
+```devtools::install_github('https://github.com/jottinog/outlyr')```
 
 ## Usage
 
