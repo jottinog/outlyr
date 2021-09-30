@@ -16,7 +16,7 @@ Check **LambertW** and **bestNormalize** for more aggresive data transforms appr
 
 ## Usage
 
-outlyr(x, y, group, method, treat) 
+outlyr(x, y, group, outlier, treat) 
 
  x – your full dataset. 
  
