@@ -20,7 +20,7 @@ outlyr(x, y, group, method, treat)
  
  group – (Optional) string indicating name of the grouping variable. If filled all further steps are done within-group.
  
- outlier – how flag and treat outliers. 'z' flags values outside ± 3.28 SD range. 'iqr' flags values outside 1.5 * IQR range.
+ outlier – how flag outliers. 'z' flags values outside ± 3.28 SD range. 'iqr' flags values outside 1.5 * IQR range.
  
  treat – how treat outliers. 'trim' set them to NA. 'win' replace them by max/min. 'replace' does mean-replacement.
  
