@@ -10,6 +10,10 @@ Robust (**robustbase**) or non-parametric tests, or even data transformations sh
 
 Check **LambertW** and **bestNormalize** for more aggresive data transforms approaches if classical methods fail.
 
+## Installation
+
+```devtools::install_github('https://github.com/jottino/outlyr')```
+
 ## Usage
 
 outlyr(x, y, group, method, treat) 
