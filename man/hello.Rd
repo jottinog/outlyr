@@ -2,12 +2,12 @@
 \alias{@jottino}
 \title{Outlyr}
 \usage{
-outlyr(x, y, group, method, treat)
+outlyr(x, y, group, outlier, treat)
 
 x - dataframe object
 y - string vector w/variable names in dataframe
 group - name of group variable in dataframe (optional)
-method - flag outliers based on 'iqr' (1.5*IQR) or 'z' (±3.28 SD)
+outlier - flag outliers based on 'iqr' (1.5*IQR) or 'z' (±3.28 SD)
 treat - 'trim' (NA), 'replace' (by mean) or 'win' (winsorize) outliers
 }
 \description{
@@ -24,6 +24,6 @@ data(iris)
 
 vars <- c('Petal.Width', 'Petal.Length')
 
-new_iris <- outlyr(iris, vars, group = 'Species', method = 'iqr', treat = 'win')
+new_iris <- outlyr(iris, vars, group = 'Species', outlier = 'iqr', treat = 'win')
 }
 
