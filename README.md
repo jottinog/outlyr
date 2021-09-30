@@ -20,7 +20,7 @@ outlyr(x, y, group, method, treat)
  
  group – (Optional) string indicating name of the grouping variable. If filled all further steps are done within-group.
  
- method – how flag and treat outliers. 'z' flags values outside ± 3.28 SD range. 'iqr' flags values outside 1.5 * IQR range.
+ outlier – how flag and treat outliers. 'z' flags values outside ± 3.28 SD range. 'iqr' flags values outside 1.5 * IQR range.
  
  treat – how treat outliers. 'trim' set them to NA. 'win' replace them by max/min. 'replace' does mean-replacement.
  
@@ -30,7 +30,7 @@ outlyr(x, y, group, method, treat)
     
     data(iris)
 
-    vars <- c('Petal.Width', 'Petal.Length', 'Sepal.Width', 'Sepal.Length')  # List the variables you want to look up for.
+    vars <- c('Petal.Width', 'Petal.Length')  # List the variables you want to look up for.
 
-    new_iris <- outlyr(iris, vars, group = 'Species', method = 'iqr', treat = 'win')  # Within-group ('Species' defined in group argument). Outliers defined by IQR method and winsorized. 
+    new_iris <- outlyr(iris, vars, group = 'Species', outlier = 'iqr', treat = 'win')  # Within-group ('Species' defined in group argument). Outliers defined by IQR method and winsorized. 
  
